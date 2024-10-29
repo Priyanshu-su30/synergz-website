@@ -11,11 +11,11 @@ function navbar() {
               <a href="/aboutUs"><img src={logo} alt='logo'></img></a>
             </div > 
               <div className='links'>
-              <a href='/aboutUs'>About Us</a>
-              <a href="/aboutUs">Our Work</a>
-              <a href="/aboutUs">Services</a>
-              <a href="/aboutUs">Careers</a>
-              <a href="/aboutUs">Contact Us</a>
+              <button className='nav-btn bttn'>About Us</button>
+              <button className='nav-btn'>About Us</button>
+              <button className='nav-btn'>About Us</button>
+              <button className='nav-btn'>About Us</button>
+              
     
               </div>
           </div>                    
