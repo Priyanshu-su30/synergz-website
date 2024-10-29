@@ -23,20 +23,6 @@
     width: 4.5rem;
     border-radius: 3rem;
   }
-  .logo a {
-    font-size: 15px;
-    text-decoration: none;
-    color: rgb(255, 255, 255);
-    display: block;
-  }
-  #header nav a {
-    color: #fff;
-    /* padding: 8px; */
-  }
-  #header nav a:hover {
-    color: #333;
-    border-radius: 3px;
-  }
 .nav-btn {
   background-color: white;
   color: black;
