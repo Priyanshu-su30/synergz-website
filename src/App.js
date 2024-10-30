@@ -3,6 +3,7 @@ import Navbar from "./components/navabar/navbar";
 import Body from "./components/body/body";
 import AboutUs from './components/aboutUs/aboutUs'
 import Services from './components/services/services';
+import Footer from './components/footer/footer';
 
 function App() {
   return(
@@ -11,6 +12,8 @@ function App() {
       <Body/>
       <AboutUs/>
       <Services/>
+      
+      <Footer/>
 
     </>
   )
