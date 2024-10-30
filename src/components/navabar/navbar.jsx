@@ -1,5 +1,5 @@
 import './navbar.css';
-import logo from '../../img/synergz-logo.png';
+import logo from '../img/synergz-logo.png';
 
 
 function navbar() {
