@@ -20,7 +20,7 @@ function services(){
                         <div class="purchase-button-container">
                         <h2 class="back-h2">Individual</h2>
                         <i class="fa-solid fa-person"></i>
-                        <div class="purchase-button light">Purchase</div>
+                        <div class="purchase-button light">View More</div>
                         </div>
                     </div>
                     </div>
