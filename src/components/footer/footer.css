@@ -1,9 +1,9 @@
 :root {
     --footer-background: #86acf4;
-    --text-color: #FAFBFC;
-    --text-gray: #FEFEFE;
-    --text-heading-gray: #F4F5F6;
-    --text-primary: #FAFBFC;
+    --text-color: #000000;
+    --text-gray: #000000;
+    --text-heading-gray: #000000;
+    --text-primary: #000000;
     --button-color: #404652;
     --button-border: #6B707C;
 }
@@ -11,10 +11,9 @@
 
 footer {
     bottom: 0;
-    background: var(--footer-background);
+    background: #efefef;
     min-width: 18rem;
-    width: 100vw;
-    margin-top: 10rem;
+    width: 100%;
     display: flex;
     align-items: center;
     flex-direction: column;
@@ -22,7 +21,7 @@ footer {
 
 .footer-wrapper {
     display: flex;
-    background: var(--footer-background);
+    background: #efefef;
     flex-direction: column;
     max-width: 80rem;
     padding: 1rem;
@@ -147,12 +146,11 @@ footer {
 
 .footer-bottom {
     text-align: center;
-    margin-top: 3rem;
     display: flex;
     align-items: center;
     width: 100%;
     gap: 1rem;
-    padding: 1rem 0px;
+    padding: 0.1rem 0px;
     flex-wrap: wrap;
     justify-content: space-between;
     color: var(--text-gray);
@@ -176,7 +174,6 @@ footer {
     display: block;
     min-width: 2.5rem;
     height: 0.125rem;
-    background: var(--text-gray);
 }
 
 .social-links {
