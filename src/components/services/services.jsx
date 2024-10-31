@@ -17,7 +17,7 @@ function Services() {
                             </div>
                         </div>
                         <div className="purchase-button-container">
-                            <h2 className="back-h2">Individual</h2>
+                            <h2 className="back-h2">Project Development</h2>
                             <i className="fa-solid fa-person"></i>
                             <div className="purchase-button light">View More</div>
                         </div>
@@ -35,9 +35,9 @@ function Services() {
                             </div>
                         </div>
                         <div className="purchase-button-container">
-                            <h2 className="back-h2">Team</h2>
+                            <h2 className="back-h2">Consulting</h2>
                             <i className="fa-solid fa-people-group"></i>
-                            <div className="purchase-button dark">Purchase</div>
+                            <div className="purchase-button dark">View More</div>
                         </div>
                     </div>
                 </div>
@@ -56,7 +56,7 @@ function Services() {
                         <div className="purchase-button-container">
                             <h2 className="back-h2">Organization</h2>
                             <i className="fa-solid fa-building"></i>
-                            <div className="purchase-button light">Purchase</div>
+                            <div className="purchase-button light">View More</div>
                         </div>
                     </div>
                 </div>
