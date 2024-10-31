@@ -5,14 +5,12 @@ function Body() {
         <div className='main'>
             <div className='maintext'>
                 <p>
-                    We are a team dedicated to building innovative startups, 
-                    connecting talent, and delivering customized client solutions.
+                We're a team of innovators, connectors, and problem-solvers, dedicated to building groundbreaking startups and delivering customized solutions for our clients.
                 </p>
             </div>
             <div className='subtext'>
                 <p>
-                    We are a team dedicated to building innovative startups, 
-                    connecting talent, and delivering customized client solutions.
+                We're passionate about fostering innovation, connecting talent, and providing tailored solutions that drive business growth and societal impact.
                 </p>
             </div>
             <div className='btn'>

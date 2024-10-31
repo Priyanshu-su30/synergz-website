@@ -6,7 +6,7 @@
   height: 38vw;
   background-size: contain;
   border-radius: 50px;
-  box-shadow: 35px 35px 79px #3166ce, -35px -35px 79px #438aff;
+  /* box-shadow: 35px 35px 79px #3166ce, -35px -35px 79px #438aff; */
   padding: 2rem ;
 }
 
