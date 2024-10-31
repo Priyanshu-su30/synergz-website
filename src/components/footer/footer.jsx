@@ -1,8 +1,9 @@
 import './footer.css';
 import logo from '../img/synergz-logo.png'
-import github from '../img/github-brands-solid.svg'
+import facebook from '../img/square-facebook-brands-solid.svg'
 import linkedin from '../img/linkedin-brands-solid.svg'
 import twitter from '../img/square-x-twitter-brands-solid.svg'
+import youtube from '../img/square-youtube-brands-solid.svg'
 
 function footer() {
     return(
@@ -150,8 +151,13 @@ function footer() {
                                 </a>
                             </li>
                             <li>
-                                <a href="#" title="GitHub">
-                                    <img src={github} alt='GitHub'/>
+                                <a href="#" title="facebook">
+                                    <img src={facebook} alt='facebook'/>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#" title="youtube">
+                                    <img src={youtube} alt='youtube'/>
                                 </a>
                             </li>
                         </ul>
