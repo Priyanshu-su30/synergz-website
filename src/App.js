@@ -5,6 +5,7 @@ import AboutUs from './components/aboutUs/aboutUs'
 import Services from './components/services/services';
 import Footer from './components/footer/footer';
 import Career from './components/careers/careeer';
+import Ourwork from './components/ourWork/ourWork';
 
 function App() {
   return(
@@ -12,10 +13,10 @@ function App() {
       <Navbar/>
       <Body/>
       <AboutUs/>
+      <Ourwork/>
       <Services/>
       <Career/>
       <Footer/>
-
     </>
   )
 }

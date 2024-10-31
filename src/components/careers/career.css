@@ -2,6 +2,11 @@
     --primary: #DD946F ;
     --secondary: #261E5A;
 }
+.heading h2{
+  margin-top: 3rem;
+  font-size: 3rem;
+  font-weight: 600;
+}
 .background {
     background-color: white;
     width: 100%;

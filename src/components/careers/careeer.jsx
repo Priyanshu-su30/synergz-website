@@ -7,6 +7,10 @@ import workimg2 from '../img/workspace.jpeg';
 function career(){
     return(
         <>
+            <div className='heading'>
+                <h2>CAREERS</h2>
+            </div>
+                
             <div class="background">
             <div class="centering">
                 <div class="articles">
