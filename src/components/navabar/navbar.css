@@ -70,7 +70,6 @@ body {
   }
 }
 
-/* Hide the menu icon on larger screens */
 @media (min-width: 769px) {
   .menu-icon {
       display: none;
