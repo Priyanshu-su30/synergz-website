@@ -1,3 +1,4 @@
+/* eslint-disable jsx-a11y/anchor-is-valid */
 import './footer.css';
 import logo from '../img/synergz-logo.png'
 import facebook from '../img/square-facebook-brands-solid.svg'
@@ -28,7 +29,7 @@ function footer() {
                 <div class="footer-columns">
                     <section class="footer-logo">
                         <h2>
-                            <img src={logo} />
+                            <img src={logo} alt='logo'/>
                         </h2>
                     </section>
                     <section>
