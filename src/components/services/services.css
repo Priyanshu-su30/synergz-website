@@ -5,13 +5,14 @@
     align-items: center;
     justify-content: center;
     flex-direction: column;
-    padding: 10rem 2rem;
+    padding: 6rem 1rem;
     background-color: #959cd9;
+    width: 100%;
 }
 
 .container h1 {
     color: rgb(5, 32, 120);
-    font-size: 4rem;
+    font-size: 3rem;
     margin-bottom: 2rem;
     text-align: center;
 }
@@ -20,18 +21,21 @@
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    gap: 2rem;
+    gap: 1.5rem;
 }
 
 .card {
-    width: 300px;
-    height: 400px;
+    width: 100%;
+    max-width: 300px;
+    height: auto;
+    min-height: 400px;
     box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
     position: relative;
     perspective: 1000px;
     transform: perspective(1000px) translateY(0);
     transform-style: preserve-3d;
     transition: transform 0.8s ease-in-out;
+    overflow: hidden;
 }
 
 .card.dark {
@@ -47,32 +51,22 @@
 .card-wrapper:hover .card {
     transform: rotateY(179deg);
 }
-.card-wrapper:hover .card .text-overlay {
-  opacity: 0;
-  transform-style: preserve-3d;
-  z-index: 1;
-}
-.card-wrapper:hover .card .purchase-button-container {
-  opacity: 1;
-}
 
 .text-overlay {
-    transform: perspective(1000px) translateY(0) translateZ(80px);
-    transition: transform 0.8s ease-in-out, opacity 1s ease;
-    pointer-events: none;
-    width: 100%;
     padding-top: 50px;
     text-align: center;
+    transition: transform 0.8s ease-in-out, opacity 1s ease;
+    pointer-events: none;
 }
 
 h2 {
-  font-size: 0.9rem;
-  text-align: center;
-  font-weight: 500;
+    font-size: 1rem;
+    text-align: center;
+    font-weight: 500;
 }
 
 .price {
-    font-size: 1.8rem;
+    font-size: 1.5rem;
     font-weight: 900;
     margin: 20px;
 }
@@ -84,6 +78,7 @@ h2 {
     gap: 0.5rem;
     color: #858585;
     font-size: 0.75rem;
+    text-align: center;
 }
 
 .purchase-button-container {
@@ -95,7 +90,7 @@ h2 {
     align-items: center;
     top: 0;
     left: 0;
-    transform: perspective(1000px) rotateY(179deg) translateY(0) translateZ(80px);
+    transform: perspective(1000px) rotateY(179deg);
     opacity: 0;
     z-index: -1;
     transition: transform 0.8s ease-in-out, opacity 1s ease;
@@ -106,65 +101,50 @@ h2 {
 .purchase-button {
     padding: 10px 40px;
     border-radius: 50px;
-    font-size: 1.2rem;
+    font-size: 1rem;
     transition: background-color 0.25s ease, color 0.25s ease;
     cursor: pointer;
     border: 1px solid indianred;
 }
 
-.purchase-button.light:hover,
-.purchase-button.dark:hover {
+.purchase-button:hover {
     background-color: indianred;
     color: #fbfbfb;
 }
 
-.details-text {
-  margin-top: 20px;
-  display: flex;
-  gap: 10px 10px;
-  align-items: center;
-  text-align: center;
-  flex-direction: column;
-  color: #858585;
-  font-size: 0.75rem;
-}
-.small {
-    font-size: 0.75rem;
-    font-weight: 100;
-    color: #858585;
-}
-
 @media (max-width: 1024px) {
-    h1 {
-        font-size: 3rem;
+    .container h1 {
+        font-size: 2.5rem;
     }
     .card {
-        width: 200px;
-        height: 300px;
+        max-width: 250px;
+        min-height: 350px;
     }
 }
 
 @media (max-width: 768px) {
-    h1 {
-        font-size: 2.5rem;
+    .container h1 {
+        font-size: 2rem;
     }
     .card {
-        width: 180px;
-        height: 280px;
+        max-width: 220px;
+        min-height: 320px;
     }
 }
 
 @media (max-width: 480px) {
-    h1 {
-        font-size: 2rem;
+    .container {
+        padding: 4rem 1rem;
+    }
+    .container h1 {
+        font-size: 1.8rem;
     }
     .card-container {
         flex-direction: column;
         align-items: center;
     }
     .card {
-        width: 100%;
-        max-width: 300px;
-        height: auto;
+        max-width: 100%;
+        min-height: 350px;
     }
 }
