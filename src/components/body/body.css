@@ -1,35 +1,38 @@
 .main {
   background-image: url("../img/bcg.jpeg");
-  background-color: #000000;
+  background-color: #000;
   margin: 9rem 10rem;
   width: auto;
   height: 38vw;
-  background-size: contain;
+  background-size: cover;
+  background-position: center;
   border-radius: 50px;
-  /* box-shadow: 35px 35px 79px #3166ce, -35px -35px 79px #438aff; */
-  padding: 2rem ;
+  padding: 2rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  color: #fff;
 }
 
-.maintext, .subtext {
+.maintext p, .subtext p {
   color: #fff;
-  display: flex;
-  justify-content: center;
-  text-align: center;
+  margin: 0;
 }
 
 .maintext p {
   font-size: 2rem;
-  padding: 4rem 2rem;
+  padding: 2rem 1rem;
 }
 
 .subtext p {
-  font-size: 0.9rem;
-  padding: 1rem 2rem;
+  font-size: 1rem;
+  padding: 1rem;
 }
 
 .btn {
   display: flex;
-  justify-content: space-around;
+  gap: 1rem;
   padding-top: 2rem;
 }
 
@@ -38,16 +41,17 @@
   align-items: center;
   justify-content: center;
   padding: 15px 30px;
-  border: 0;
+  border: none;
   position: relative;
   overflow: hidden;
   border-radius: 10rem;
-  transition: all 0.2s;
   font-weight: bold;
   cursor: pointer;
   color: rgb(37, 37, 37);
+  transition: background 0.3s;
   z-index: 0;
   box-shadow: 0 0px 7px -5px rgba(0, 0, 0, 0.5);
+  background-color: #f1f1f1;
 }
 
 .button:hover {
@@ -88,26 +92,22 @@
 }
 
 @keyframes effect {
-  0% {
-      transform: rotate(0deg);
-  }
-  100% {
-      transform: rotate(360deg);
-  }
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
 }
 
 @media (max-width: 1024px) {
   .main {
-      margin: 2rem 5rem;
-      height: 50vw;
+      margin: 5rem;
+      height: auto;
+      padding: 2rem;
   }
   .maintext p {
       font-size: 1.5rem;
-      padding: 3rem 1.5rem;
+      padding: 1.5rem;
   }
   .subtext p {
-      font-size: 0.8rem;
-      padding: 0.5rem 1.5rem;
+      font-size: 0.9rem;
   }
   .btn {
       flex-direction: column;
@@ -117,27 +117,26 @@
 
 @media (max-width: 768px) {
   .main {
-      margin: 1rem;
-      height: auto;
+      margin: 2rem;
       padding: 1.5rem;
   }
   .maintext p {
       font-size: 1.2rem;
-      padding: 2rem 1rem;
+      padding: 1.5rem;
   }
   .subtext p {
       font-size: 0.8rem;
-      padding: 0.5rem 1rem;
+      padding: 1rem;
   }
   .button {
-      padding: 12px 20px;
+      padding: 12px 24px;
       font-size: 1rem;
   }
 }
 
 @media (max-width: 480px) {
   .main {
-      margin: 0.5rem;
+      margin: 1rem;
       padding: 1rem;
   }
   .maintext p {
@@ -148,7 +147,7 @@
       font-size: 0.7rem;
   }
   .button {
-      padding: 10px 15px;
+      padding: 10px 20px;
       font-size: 0.9rem;
   }
 }
