@@ -4,11 +4,10 @@
     color: #333;
     margin-bottom: 2rem;
 }
-
 .carousel-container {
     width: auto;
     height: 90vh;
-    margin: 10rem 5rem;
+    margin: 5rem 5rem;
     overflow: hidden;
     position: relative;
 }
